@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-module Ctm
+module CtmSms
   class CtmClient
     attr_reader :session
 
     def initialize
-      @session = Ctm::Session.new(resources_url)
+      @session = CtmSms::Session.new(resources_url)
     end
 
     def send_sms(params)
@@ -15,7 +15,7 @@ module Ctm
     private
 
     def resources_url
-      Ctm::Constants.construct_api_endpoint(Ctm::Constants::SEND_SMS_PATH)
+      CtmSms::Constants.construct_api_endpoint(CtmSms::Constants::SEND_SMS_PATH)
     end
   end
 end

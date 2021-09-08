@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Ctm
+module CtmSms
   class SmsError < StandardError
   end
 end

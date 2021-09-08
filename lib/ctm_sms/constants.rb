@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Ctm
+module CtmSms
   class Constants
     ENDPOINT = 'https://emg.ctm-mobile.com:10081'
     SEND_SMS_PATH = '/servlet/SendSMS'
