@@ -6,7 +6,7 @@ module CtmSms
     SEND_SMS_PATH = '/servlet/SendSMS'
 
     def self.construct_api_endpoint(path)
-      ENDPOINT + SEND_SMS_PATH + path
+      ENDPOINT + path
     end
   end
 end

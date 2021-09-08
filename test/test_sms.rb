@@ -11,7 +11,7 @@ class TestSms < Minitest::Test
 
   def test_send_sms_error
     stub_request(:get, construct_mock_api_endpoint)
-      .to_return(body: JSON.generate({}), status: 400)
+      .to_return(body: JSON.generate({}), status: 404)
     CtmSms::SendSms.new('demo', '85368185610').send_sms
   end
 
