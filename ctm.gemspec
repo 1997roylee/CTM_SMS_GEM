@@ -3,7 +3,7 @@
 require_relative 'lib/ctm/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ctm'
+  spec.name          = 'ctm_sms'
   spec.version       = Ctm::VERSION
   spec.authors       = ['Roy Lee']
   spec.email         = ['1997roylee@gmail.com']
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata['allowed_push_host'] = "https://rubygems.org"
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/1997roylee/CTM_SMS_RUBY'
@@ -30,8 +30,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
-
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'webmock'
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
 end
