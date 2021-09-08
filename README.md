@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+to = "85368180000"
+message = "I am a Demo!!!"
+CtmSms::SendSms.new(message, to).send_sms
+```
+
+Before you run the send sms script, you have to set your account key in your environment:
+
+```bash
+export CTM_API_USERNAME=xxxxxxxxx
+export CTM_API_PASSWORD=xxxxxxxxx
+export CTM_FROM=xxxxxxx
+```
 
 ## Development
 

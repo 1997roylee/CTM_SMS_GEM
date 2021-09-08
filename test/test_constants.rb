@@ -12,7 +12,7 @@ class TestConstants < Minitest::Test
   end
 
   def test_construct_api_endpoint
-    assert_equal "#{CtmSms::Constants::ENDPOINT}#{CtmSms::Constants::SEND_SMS_PATH}/demo",
-                 CtmSms::Constants.construct_api_endpoint('/demo')
+    assert_equal "#{CtmSms::Constants::ENDPOINT}#{CtmSms::Constants::SEND_SMS_PATH}",
+                 CtmSms::Constants.construct_api_endpoint(CtmSms::Constants::SEND_SMS_PATH)
   end
 end
