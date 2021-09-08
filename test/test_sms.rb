@@ -1,12 +1,9 @@
 # frozen_string_literal: true
 
-require 'minitest/autorun'
-require 'ctm'
-require 'uri'
-require 'webmock/minitest'
+require 'test_helper'
 
 class TestSms < Minitest::Test
-  def test_english_hello
+  def test_send_sms
     stub_request(:get, construct_mock_api_endpoint)
       .to_return(body: JSON.generate({}))
     Ctm::SendSms.new('demo', '85368185610').send_sms
