@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
 # Version
-require 'ctm/version'
+require 'ctm_sms/version'
 # Constants
-require 'ctm/constants'
+require 'ctm_sms/constants'
 # Client
-require 'ctm/ctm_client'
+require 'ctm_sms/ctm_client'
 # Utils
-require 'ctm/errors'
-require 'ctm/session'
+require 'ctm_sms/errors'
+require 'ctm_sms/session'
 
-module Ctm
+module CtmSms
   class SendSms
     attr_reader :message, :to, :client
 
     def initialize(message, to)
       @message = message
       @to = to
-      @client = Ctm::CtmClient.new
+      @client = CtmSms::CtmClient.new
     end
 
     def send_sms

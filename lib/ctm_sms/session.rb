@@ -5,7 +5,7 @@ require 'net/http'
 require 'net/https'
 require 'json'
 
-module Ctm
+module CtmSms
   class Session
     attr_reader :uri, :headers, :response
 

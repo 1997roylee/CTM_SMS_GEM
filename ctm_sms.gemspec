@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/ctm/version'
+require_relative 'lib/ctm_sms/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'ctm_sms'
-  spec.version       = Ctm::VERSION
+  spec.version       = CtmSms::VERSION
   spec.authors       = ['Roy Lee']
   spec.email         = ['1997roylee@gmail.com']
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
 
-  spec.metadata['allowed_push_host'] = "https://rubygems.org"
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/1997roylee/CTM_SMS_RUBY'
