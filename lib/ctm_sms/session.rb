@@ -18,8 +18,9 @@ module CtmSms
       uri.query = URI.encode_www_form(params)
       @response = Net::HTTP.get_response(uri)
 
-      response.body if response.is_a?(Net::HTTPSuccess)
-      # JSON.parse(response.body).with_indifferent_access if response.is_a?(Net::HTTPSuccess)
+      p response
+      response.body
+      # response.body if response.is_a?(Net::HTTPSuccess)
     end
 
     def get!(params)
